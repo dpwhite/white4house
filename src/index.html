@@ -1,88 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-  <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>White for State House District 28</title>
+    <title>White for State House</title>
+    <base href="/">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="icon" type="image/png" href="img/favicon.ico">
-      <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-      <link rel="stylesheet" href="css/site.css" type="text/css" />
-      
-      <style>
-        body {
-          background-color: #fff;
-        }
-      </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-      <script>
-        console.log('White for office');
-      </script>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
   </head>
+
   <body>
-      <main>
-        <nav class="navbar navbar-inverse">
-          <h2 class="sr-only">Navigation Menu</h2>
-
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </div>
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a>
-
-              </li>
-              <li><a href="#about">About</a>
-
-              </li>
-              <li><a href="#contact">Contact</a>
-
-              </li>
-            </ul>
-          </div>
-        <!--/.nav-collapse -->
-          </div>
-        </nav>
-         <header>
-              <h1></h1>
-         
-         </header>
-         <section>
-            <div class="col-sm-8">
-              <h2>Let's work together!</h2>
-         
-             <article>
-                  <h3>Hi, I'm Durward White and I'm running for District 28.</h3>
-              <span>Additionally, if a DOM element has a width and height of 0, the element is not seen by the DOM. This is why the above CSS uses width: 1px; height: 1px;. By using display: none and setting your CSS to height: 0 and width: 0, the element is not seen by the DOM and is thus problematic. The above CSS using width: 1px; height: 1px; is not all you do to make the content invisible to desktop and mobile browsers (without overflow: hidden, your content would still show on the screen), and visible to screen readers. Hiding the content from desktop and mobile browsers is done by adding an offset from width: 1px and height: 1px previously mentioned by using:
-                  Additionally, if a DOM element has a width and height of 0, the element is not seen by the DOM. This is why the above CSS uses width: 1px; height: 1px;. By using display: none and setting your CSS to height: 0 and width: 0, the element is not seen by the DOM and is thus problematic. The above CSS using width: 1px; height: 1px; is not all you do to make the content invisible to desktop and mobile browsers (without overflow: hidden, your content would still show on the screen), and visible to screen readers. Hiding the content from desktop and mobile browsers is done by adding an offset from width: 1px and height: 1px previously mentioned by using:
-                  Additionally, if a DOM element has a width and height of 0, the element is not seen by the DOM. This is why the above CSS uses width: 1px; height: 1px;. By using display: none and setting your CSS to height: 0 and width: 0, the element is not seen by the DOM and is thus problematic. The above CSS using width: 1px; height: 1px; is not all you do to make the content invisible to desktop and mobile browsers (without overflow: hidden, your content would still show on the screen), and visible to screen readers. Hiding the content from desktop and mobile browsers is done by adding an offset from width: 1px and height: 1px previously mentioned by using:
-                  Additionally, if a DOM element has a width and height of 0, the element is not seen by the DOM. This is why the above CSS uses width: 1px; height: 1px;. By using display: none and setting your CSS to height: 0 and width: 0, the element is not seen by the DOM and is thus problematic. The above CSS using width: 1px; height: 1px; is not all you do to make the content invisible to desktop and mobile browsers (without overflow: hidden, your content would still show on the screen), and visible to screen readers. Hiding the content from desktop and mobile browsers is done by adding an offset from width: 1px and height: 1px previously mentioned by using:             
-              </span>
-             </article>
-            </div>
-             <div class="col-sm-4">
-             <aside>               
-               <details open>
-                 <summary>Top 5 issues</summary>
-                 <ul>
-                   <li>Reducing property taxes</li>
-                   <li>Ensuring businesses release information about chemicals stored near population areas</li>
-                   <li>Increasing access to health care centers</li>
-                   <li>Provide incentives for cities to provide better and more efficient public transportation</li>
-                   <li>Provide residents more transparency into M.U.D. districts</li>
-                 </ul>
-             </aside>
-            </div>
-         </section>
-         <div class="col-sm-12">
-         <footer>
-              <h2>Footer Title</h2>
-         
-         </footer>
-        </div>
-      </main>
+    <main>
+    <my-app>Loading AppComponent content here ...</my-app>
+    </main>
   </body>
+</html>

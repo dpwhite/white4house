@@ -2,4 +2,77 @@ h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
+}ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+}
+
+/* This hides the dropdowns */
+
+
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: .25em;
+  text-decoration: none;
+  white-space: nowrap;
+  background: #303030;
+  color: #FFFFFF;
+}
+
+/* ul li a:hover { background: #CCC209; } */
+
+/* Display the dropdown */
+
+
+li:hover > ul {
+  display: block;
+  position: fixed;  
+  background: #101010;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #0B0A0A; }
+
+li:hover li a:hover { background: #FFFFFF; }
+
+.main-navigation li ul li { border-top: 0; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* Simple clearfix */
+
+
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: none; /* 2 */
+}
+
+#mybox { 
+  -webkit-transform: translate(200px, 20px);
+  transform: translate(200px, 20px);
+}
+
+img:hover {
+  transform: translate(300px, 20px) rotate(360deg);  
+  transition: all 5s ease-in-out 1s;
+  
+}
+
